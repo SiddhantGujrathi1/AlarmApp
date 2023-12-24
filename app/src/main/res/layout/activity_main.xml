@@ -1,0 +1,67 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#113E99"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/whiteblack"
+        android:drawableLeft="@drawable/alarm"
+        android:drawablePadding="8dp"
+        android:padding="30px"
+        android:text="Alarm App"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold|italic"
+        android:textAlignment="center"/>
+
+    <TimePicker
+        android:id="@+id/timePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:amPmBackgroundColor="#FFB700"
+        android:background="@drawable/whiteblack"
+        android:numbersBackgroundColor="#FFC800"
+        android:numbersTextColor="#003A54"
+        android:scaleX="0.85"
+        android:scaleY="0.85" />
+
+
+    <Button
+        android:id="@+id/setAlarmButton"
+        android:layout_width="151dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#2F62C7"
+        android:onClick="setAlarm"
+        android:text="Set Alarm"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/alarmListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/whiteblack"
+        android:padding="30px"
+        android:backgroundTint="#C2EDEC"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/stopAlarmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Alarm"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</LinearLayout>
